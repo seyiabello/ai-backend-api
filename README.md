@@ -64,6 +64,8 @@ Client → FastAPI → Services Layer → OpenAI API
                Database (SQLite)
 ```
 
+![Architecture](screenshots/architecture.png)
+
 ---
 
 ## API Endpoints
@@ -74,6 +76,8 @@ Client → FastAPI → Services Layer → OpenAI API
 | `/health/details`| GET    | Detailed system info |
 | `/ask`           | POST   | Query LLM            |
 | `/feedback`      | POST   | Store feedback       |
+
+![Swagger UI](screenshots/swaggerui.PNG)
 
 ### Example Request
 
@@ -95,6 +99,27 @@ Client → FastAPI → Services Layer → OpenAI API
   "request_id": "abc123"
 }
 ```
+
+![Ask Endpoint](screenshots/askendpoint.PNG)
+
+---
+
+## Screenshots
+
+### Caching — First Request (not cached)
+![Cache Miss](screenshots/cache_false.PNG)
+
+### Caching — Second Request (cached)
+![Cache Hit](screenshots/cache_true.PNG)
+
+### Rate Limiting (HTTP 429)
+![Rate Limiting](screenshots/ratelimit.PNG)
+
+### Docker Running
+![Docker](screenshots/dockerrunning.PNG)
+
+### Tests Passing
+![Tests](screenshots/testspassing.PNG)
 
 ---
 
