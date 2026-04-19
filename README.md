@@ -45,10 +45,10 @@ Unlike simple AI demos, this system includes:
 - Prompt-controlled outputs
 
 ### Production-Minded Features
-- **Caching layer** — reduces cost and improves latency
-- **Rate limiting** — protects API from abuse
-- **Request ID tracing** — debugging and observability
-- **SQLite logging** — interactions and feedback
+- **Caching layer** - reduces cost and improves latency
+- **Rate limiting** - protects API from abuse
+- **Request ID tracing** - debugging and observability
+- **SQLite logging** - interactions and feedback
 - **Pytest test suite**
 - **Dockerised deployment**
 
